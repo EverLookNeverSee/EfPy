@@ -1,2 +1,2 @@
-# EfPy
+# EffPy
 Effective Python
