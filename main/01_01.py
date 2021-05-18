@@ -3,7 +3,7 @@
         Know which version of python you are using
 """
 
-import sys
+from sys import version, version_info
 
-print(f"sys.version: {sys.version}")
-print(f"sys.version_info: {sys.version_info}")
+print(f"sys.version: {version}")
+print(f"sys.version_info: {version_info}")
