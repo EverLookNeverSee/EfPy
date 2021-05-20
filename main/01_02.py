@@ -24,3 +24,16 @@ my_string = "a\u0300 python"
 print(f"list of my_byte: {list(my_string)}")
 print(f"type of my_byte: {type(my_string)}")
 print(f"my_byte: {my_string}")
+
+
+def to_str(bytes_or_str: Union[bytes, str]) -> str:
+    """
+    This function takes a bytes or string instance and always returns a str
+    :param bytes_or_str: bytes or str instance
+    :return: str instance
+    """
+    if isinstance(bytes_or_str, bytes):
+        result = bytes_or_str.decode("utf-8")
+    else:
+        result = bytes_or_str
+    return result
