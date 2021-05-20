@@ -7,6 +7,9 @@
         textual characters from human languages.
 """
 
+from typing import Union
+
+
 # Defining a byte
 my_byte = b"h\x65llo"
 print(f"list of my_byte: {list(my_byte)}")
