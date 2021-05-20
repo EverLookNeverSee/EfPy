@@ -30,6 +30,19 @@ def to_str(bytes_or_str: Union[bytes, str]) -> str:
     return result
 
 
+def to_bytes(str_or_bytes: Union[bytes, str]) -> bytes:
+    """
+    This function takes a bytes or string instance and always returns a bytes
+    :param str_or_bytes: str or bytes instance
+    :return: bytes instance
+    """
+    if isinstance(str_or_bytes, str):
+        result = str_or_bytes.encode("utf-8")
+    else:
+        result = str_or_bytes
+    return result
+
+
 if __name__ == '__main__':
 
     print(f"list of my_byte: {list(my_byte)}")
