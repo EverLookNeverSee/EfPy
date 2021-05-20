@@ -6,3 +6,9 @@
         ASCII encoding). Instances of str contain Unicode code points that represent
         textual characters from human languages.
 """
+
+# Defining a byte
+my_byte = b"h\x65llo"
+print(f"list of my_byte: {list(my_byte)}")
+print(f"type of my_byte: {type(my_byte)}")
+print(f"my_byte: {my_byte}")
