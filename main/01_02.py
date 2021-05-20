@@ -12,18 +12,9 @@ from typing import Union
 
 # Defining a byte
 my_byte = b"h\x65llo"
-print(f"list of my_byte: {list(my_byte)}")
-print(f"type of my_byte: {type(my_byte)}")
-print(f"my_byte: {my_byte}")
-
-# This is the output separator
-print("*-*" * 50)
 
 # Defining a string
 my_string = "a\u0300 python"
-print(f"list of my_byte: {list(my_string)}")
-print(f"type of my_byte: {type(my_string)}")
-print(f"my_byte: {my_string}")
 
 
 def to_str(bytes_or_str: Union[bytes, str]) -> str:
@@ -37,3 +28,17 @@ def to_str(bytes_or_str: Union[bytes, str]) -> str:
     else:
         result = bytes_or_str
     return result
+
+
+if __name__ == '__main__':
+
+    print(f"list of my_byte: {list(my_byte)}")
+    print(f"type of my_byte: {type(my_byte)}")
+    print(f"my_byte: {my_byte}")
+
+    # This is the output separator
+    print("*-*" * 50)
+
+    print(f"list of my_byte: {list(my_string)}")
+    print(f"type of my_byte: {type(my_string)}")
+    print(f"my_byte: {my_string}")
