@@ -12,3 +12,12 @@ my_byte = b"h\x65llo"
 print(f"list of my_byte: {list(my_byte)}")
 print(f"type of my_byte: {type(my_byte)}")
 print(f"my_byte: {my_byte}")
+
+# This is the output separator
+print("*-*" * 50)
+
+# Defining a string
+my_string = "a\u0300 python"
+print(f"list of my_byte: {list(my_string)}")
+print(f"type of my_byte: {type(my_string)}")
+print(f"my_byte: {my_string}")
