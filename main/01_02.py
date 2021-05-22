@@ -10,8 +10,10 @@
 from typing import Union
 
 
-# Defining a byte
+# Defining bytes instances
 my_byte = b"h\x65llo"
+b_one = b"one"
+b_two = b"two"
 
 # Defining a string
 my_string = "a\u0300 python"
