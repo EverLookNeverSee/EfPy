@@ -67,3 +67,12 @@ if __name__ == '__main__':
     print(repr(to_str("bar")))
 
     print("\n" + "*-*" * 50 + "\n")
+
+    # Using + operator
+    print(f"b_one + b_two: {b_one + b_two}")
+    print(f"s_one + s_two: {s_one + s_two}")
+
+    try:
+        print(f"b_one + s_two: {b_one + s_two}")
+    except TypeError:
+        print("You can’t add str instances to bytes instances.")
