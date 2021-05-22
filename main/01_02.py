@@ -54,14 +54,16 @@ if __name__ == '__main__':
     print(f"my_byte: {my_byte}")
 
     # This is the output separator
-    print("*-*" * 50)
+    print("\n" + "*-*" * 50 + "\n")
 
     print(f"list of my_byte: {list(my_string)}")
     print(f"type of my_byte: {type(my_string)}")
     print(f"my_byte: {my_string}")
 
-    print("*-*" * 50)
+    print("\n" + "*-*" * 50 + "\n")
 
     # Testing to_str function
     print(repr(to_str(b"foo")))
     print(repr(to_str("bar")))
+
+    print("\n" + "*-*" * 50 + "\n")
