@@ -15,8 +15,10 @@ my_byte = b"h\x65llo"
 b_one = b"one"
 b_two = b"two"
 
-# Defining a string
+# Defining str instances
 my_string = "a\u0300 python"
+s_one = "one"
+s_two = "two"
 
 
 def to_str(bytes_or_str: Union[bytes, str]) -> str:
