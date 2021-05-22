@@ -76,3 +76,14 @@ if __name__ == '__main__':
         print(f"b_one + s_two: {b_one + s_two}")
     except TypeError:
         print("You can’t add str instances to bytes instances.")
+
+    print("\n" + "*-*" * 50 + "\n")
+
+    # Using binary operators (comparison)
+    print(f"b_one > b_two: {b_one > b_two}")
+    print(f"s_one < s_two: {s_one < s_two}")
+
+    try:
+        print(f"b_two > s_one: {b_two > s_one}")
+    except TypeError:
+        print("You can’t compare str instances to bytes instances.")
