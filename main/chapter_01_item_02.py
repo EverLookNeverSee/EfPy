@@ -87,3 +87,9 @@ if __name__ == '__main__':
         print(f"b_two > s_one: {b_two > s_one}")
     except TypeError:
         print("You can’t compare str instances to bytes instances.")
+
+    print("\n" + "*-*" * 50 + "\n")
+
+    # Comparing bytes and str instances for equality will always evaluate
+    # to False, even when they contain exactly the same characters.
+    print(f"b'foo' == 'foo': {b'foo' == 'foo'}")
