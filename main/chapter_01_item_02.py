@@ -93,3 +93,17 @@ if __name__ == '__main__':
     # Comparing bytes and str instances for equality will always evaluate
     # to False, even when they contain exactly the same characters.
     print(f"b'foo' == 'foo': {b'foo' == 'foo'}")
+
+    print("\n" + "*-*" * 50 + "\n")
+
+    # Using % operator
+    print(f"b'red %s' % b'blue: {b'red %s' % b'blue'}'")
+    print(f"'red %s' % 'blue: {'red %s' % 'blue'}'")
+
+    try:
+        print(f"b'red %s' % 'blue: {b'red %s' % 'blue'}'")
+    except TypeError:
+        print("%b requires a bytes-like object, or an object that implements"
+              " __bytes__, not 'str'")
+
+    print(f"'red %s' % b'blue: {'red %s' % b'blue'}'")
