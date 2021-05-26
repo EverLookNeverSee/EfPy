@@ -13,3 +13,21 @@ value = 1.234
 if __name__ == '__main__':
     # Converting binary and hexadecimal values to integer strings
     print("Binary is %d, hexadecimal is %d" % (binary, hexadecimal))
+
+    print("\n" + "*-*" * 50 + "\n")
+
+    # First problem in c-style string formatting
+    formatted = "%-10s = %.2f" % (key, value)
+    print(formatted)
+
+    try:
+        formatted = "%-10s = %.2f" % (value, key)
+        print(formatted)
+    except TypeError:
+        print("Must be real number, not str")
+
+    try:
+        formatted = "%.2f = %-10s" % (key, value)
+        print(formatted)
+    except TypeError:
+        print("Must be real number, not str")
