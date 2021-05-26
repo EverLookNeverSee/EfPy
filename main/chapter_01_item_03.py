@@ -9,6 +9,12 @@ hexadecimal = 0xc5f
 key = "my_var"
 value = 1.234
 
+pantry = [
+    ("avocados", 125),
+    ("bananas", 2.5),
+    ("cherries", 15)
+]
+
 
 if __name__ == '__main__':
     # Converting binary and hexadecimal values to integer strings
