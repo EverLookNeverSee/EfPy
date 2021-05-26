@@ -37,3 +37,18 @@ if __name__ == '__main__':
         print(formatted)
     except TypeError:
         print("Must be real number, not str")
+
+    print("\n" + "*-*" * 50 + "\n")
+
+    # Second problem in c-style string formatting
+    for i, (item , count) in enumerate(pantry):
+        print('#%d: %-10s = %.2f' % (i, item, count))
+
+    print("\n")
+
+    for i, (item, count) in enumerate(pantry):
+        print('#%d: %-10s = %d' % (
+            i + 1,
+            item.title(),
+            round(count)
+        ))
