@@ -6,6 +6,10 @@
 binary = 0b10111011
 hexadecimal = 0xc5f
 
+key = "my_var"
+value = 1.234
+
+
 if __name__ == '__main__':
     # Converting binary and hexadecimal values to integer strings
     print("Binary is %d, hexadecimal is %d" % (binary, hexadecimal))
