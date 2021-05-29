@@ -15,6 +15,9 @@ pantry = [
     ("cherries", 15)
 ]
 
+template = "%s loves food, See %s cook."
+name = "EverLookNeverSee"
+
 
 if __name__ == '__main__':
     # Converting binary and hexadecimal values to integer strings
