@@ -16,7 +16,7 @@ pantry = [
 ]
 
 template = "%s loves food, See %s cook."
-name = "EverLookNeverSee"
+name = "everlookneversee"
 
 
 if __name__ == '__main__':
@@ -55,3 +55,12 @@ if __name__ == '__main__':
             item.title(),
             round(count)
         ))
+
+    print("\n" + "*-*" * 50 + "\n")
+
+    # Third problem in c-style string formatting
+    formatted = template % (name, name)
+    print(formatted)
+
+    formatted = template % (name.title(), name.title())
+    print(formatted)
